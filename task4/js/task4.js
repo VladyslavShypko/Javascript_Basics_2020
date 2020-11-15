@@ -32,7 +32,7 @@ function Screamer1(...arguments) {
  Object.setPrototypeOf(Screamer1.prototype, Speaker1.prototype);
     
     Screamer1.prototype.speak = function(text) {
-        return this.name + ' ' + 'says' + text.toUpperCase();
+        return this.name + ' ' + 'says' + ' ' + text.toUpperCase();
     }
 }
 
