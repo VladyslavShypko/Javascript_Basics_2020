@@ -22,18 +22,20 @@ function Speaker1(name) {
     
     this.name = name;
     
-    Speaker1.prototype.speak = function(text) {
-        return `${this.name} says ${text}`;
-    }
+}
+
+Speaker1.prototype.speak = function(text) {
+    return this.name + ' ' + 'says' + ' ' + text;
 }
 
 function Screamer1(...arguments) {
  Object.assign(this, new Speaker1(...arguments))
  Object.setPrototypeOf(Screamer1.prototype, Speaker1.prototype);
     
-    Screamer1.prototype.speak = function(text) {
-        return this.name + ' ' + 'says' + ' ' + text.toUpperCase();
-    }
+}
+
+Screamer1.prototype.speak = function(text) {
+    return this.name + ' ' + 'says' + ' ' + text.toUpperCase();
 }
 
 console.log(new Speaker1("Mr. Calm").speak("easy, man"));
@@ -92,8 +94,8 @@ class BookLists {
     add(book) {
        this.arrBooks.push(book); 
        if(this.arrBooks[0] === book) {
-           this.currentBookBeingRead = book;
            book.read = true;
+           this.currentBookBeingRead = book;
        }
        this.numberOfBooksNotReadYet++;
     }
