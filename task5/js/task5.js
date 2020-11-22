@@ -146,6 +146,9 @@ const fetchFakeJson = () => {
  .then(updatedUser => {
    console.log(updatedUser);
  })
+ .catch(error => {
+     console.log('error', error)
+ })
 }
 
 fetchFakeJson();
