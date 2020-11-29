@@ -1,0 +1,161 @@
+.wrapper {
+    padding: 50px 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: silver;
+}
+
+.excercise1-wrapper, .excercise2-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+}
+
+#height {
+    margin-right: 20px;
+}
+
+#height, #width {
+    color: red;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#input-field {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 30px;
+}
+
+#textarea-field {
+    height: 140px;    
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#content{
+    width: 400px;
+    height: 200px;
+    margin: 0;
+}
+
+.excercise3-wrapper{
+    background-color: white;
+    padding: 20px;
+}
+
+.slider-header {
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#slider {
+    height: 300px;
+    width: 680px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#timer {
+    border-radius: 5px;
+}
+
+.slide{
+  position: relative;
+   z-index: 20;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+#slider .previous, #slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 30;
+}
+
+#slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#slider .previous:hover,
+#slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider .slide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#delete-icon {
+    width: 31px;
+    cursor: pointer;
+    height: auto;
+}
+
+table {
+    border: 1px solid black;
+    width: 720px;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+  width: 45%;
+}
+
+tr {
+    height: 35px;
+}
+
+.td-icon {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+
+}
+
+#add-row-button {
+ margin-top: 20px;   
+}
