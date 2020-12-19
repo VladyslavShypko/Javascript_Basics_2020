@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="todo-header">
+            <h2 class="title">Todo List</h2>
+            <input id="search-field" type="text" placeholder="Search...">
+        </div>
+        <div class="todo-body">
+            <div class="add-task-form">
+                <input id="add-task-field" type="text" placeholder="New task...">
+                <button id="add-task-button">ADD</button>
+            </div>
+            <div class="open-tasks tasks">
+                <div class="open-tasks-header tasks-header">
+                    <h3 class="title">Open</h3>
+                    <select class="sort-list" id="sort-list-open-list">
+                        <option>Date creation (Asc)</option>
+                        <option>Date creation (Desc)</option>
+                        <option>Text (Asc)</option>
+                        <option>Text (Desc)</option>
+                    </select>
+                </div>
+                <div class="tasks-body" id="open-tasks-body"></div>
+                <button id="clear-open-list-button" class="clear-list">Clear "Open" list</button>
+            </div>
+            <div class="done-tasks tasks">
+                <div class="done-tasks-header tasks-header">
+                    <h3 class="title">Done</h3>
+                    <select class="sort-list" id="sort-list-done-list">
+                        <option>Due date (Asc)</option>
+                        <option>Due date (Desc)</option>
+                        <option>Text (Asc)</option>
+                        <option>Text (Desc)</option>
+                    </select>
+                </div>
+                <div id="done-tasks-body" class="tasks-body"></div>
+                <button id="clear-done-list-button" class="clear-list">Clear "Done" list</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
